@@ -2,13 +2,17 @@
   "name": "puppet-phar",
   "version": "0.1.0",
   "author": "Catalin Panaite",
-  "summary": "Module to download and install phar packages",
+  "summary": "Puppet module to download and install composer and any other phar packages",
   "license": "MIT",
-  "source": "",
-  "project_page": null,
-  "issues_url": null,
+  "source": "https://github.com/catalinpan/puppet-phar",
+  "project_page": https://github.com/catalinpan/puppet-phar,
+  "issues_url": https://github.com/catalinpan/puppet-phar/issues,
   "dependencies": [
-    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+   {
+      "name": "maestrodev/wget",
+      "version_requirement": ">=1.2.0"
+    }
   ]
+
 }
 
