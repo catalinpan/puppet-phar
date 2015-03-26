@@ -5,8 +5,8 @@
   "summary": "Puppet module to download and install composer and any other phar packages",
   "license": "MIT",
   "source": "https://github.com/catalinpan/puppet-phar",
-  "project_page": https://github.com/catalinpan/puppet-phar,
-  "issues_url": https://github.com/catalinpan/puppet-phar/issues,
+  "project_page": "https://github.com/catalinpan/puppet-phar",
+  "issues_url": "https://github.com/catalinpan/puppet-phar/issues",
   "dependencies": [
    {
       "name": "maestrodev/wget",
