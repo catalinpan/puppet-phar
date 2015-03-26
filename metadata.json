@@ -1,0 +1,14 @@
+{
+  "name": "puppet-phar",
+  "version": "0.1.0",
+  "author": "Catalin Panaite",
+  "summary": "Module to download and install phar packages",
+  "license": "MIT",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
