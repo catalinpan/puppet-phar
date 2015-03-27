@@ -4,25 +4,15 @@
 
 1. [Overview](#overview)
 3. [Setup - The basics of getting started with phar](#setup)
-    * [What phar affects](#what-phar-affects)
     * [Setup requirements](#setup-requirements)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Limitations - OS compatibility, etc.](#limitations)
 
 ## Overview
 
-The module can fully manage .phar installation packages including composer (with auto update option), phpunit, phpdox, phploc, phpcpd any any other .phar package.
+The module can fully manage .phar installation packages including composer (with auto update option), phpunit, phpdox, phploc, phpcpd and any other .phar package.
 
 The module supports also hiera
-
-##Setup 
-
-### What phar affects
-
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
 
 ### Setup Requirements 
 
@@ -48,12 +38,12 @@ Puppet-phar module requires maestrodev/wget module.
  Hiera Usage
 
        phar_package:
-         'phpunit':
+          'phpunit':
                phar_location: 'https://phar.phpunit.de'
-         'composer':
+          'composer':
                phar_location: 'https://getcomposer.org'
                auto_update: true
-         'phpdox':
+          'phpdox':
                 phar_location: 'https://phar.phpunit.de'
                 target_dir: '/usr/local/bin'
 
