@@ -24,6 +24,7 @@ Puppet-phar module requires maestrodev/wget module.
 
        phar::package {'phpunit':
                phar_location => 'https://phar.phpunit.de',
+	       version	     => '4.8.9',
                }
 
        phar::package {'phpdox':
@@ -40,6 +41,7 @@ Puppet-phar module requires maestrodev/wget module.
        phar_package:
           'phpunit':
                phar_location: 'https://phar.phpunit.de'
+    	       version: '4.8.9'
           'composer':
                phar_location: 'https://getcomposer.org'
                auto_update: true

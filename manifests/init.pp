@@ -46,16 +46,26 @@ class phar {
 
 define phar::package (
   $phar_package = $title,
+  $version	= "",
   $target_dir   = '/usr/local/bin',
   $user         = 'root',
   $phar_location = 'https://phar.phpunit.de',
   $auto_update   = false,
   )  {
 
+if $version {
+  wget::fetch { $phar_package:
+    source      => "${phar_location}/${phar_package}-${version}.phar",
+    destination => "${target_dir}/${phar_package}",
+  }
+}
+
+if $version == "" {
   wget::fetch { $phar_package:
     source      => "${phar_location}/${phar_package}.phar",
     destination => "${target_dir}/${phar_package}",
   }
+}
 
   exec { $phar_package:
     command => "chmod a+x ${target_dir}/${phar_package}",
