@@ -60,7 +60,7 @@ if $version {
   }
 }
 
-if $version == "" {
+if $version != "" {
   wget::fetch { $phar_package:
     source      => "${phar_location}/${phar_package}.phar",
     destination => "${target_dir}/${phar_package}",
