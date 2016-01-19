@@ -53,14 +53,14 @@ define phar::package (
   $auto_update   = false,
   )  {
 
-if $version {
+if $version != "" {
   wget::fetch { $phar_package:
     source      => "${phar_location}/${phar_package}-${version}.phar",
     destination => "${target_dir}/${phar_package}",
   }
 }
 
-if $version != "" {
+if $version == "" {
   wget::fetch { $phar_package:
     source      => "${phar_location}/${phar_package}.phar",
     destination => "${target_dir}/${phar_package}",
